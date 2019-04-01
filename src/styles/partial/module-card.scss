@@ -1,7 +1,7 @@
 .module-card {
   height: 250px;
-  background-color: $navy;
-  color: $white;
+  background-color: $white;
+  color: $navy;
   border-radius: $br;
   margin-top: $mgn;
   margin-bottom: $mgn;
@@ -9,5 +9,6 @@
   & .title {
     @extend .text-center;
     @extend .font-md;
+    color: $navy;
   }
 }

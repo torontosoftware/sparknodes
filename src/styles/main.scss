@@ -6,16 +6,18 @@ html, body {
   color: $white;
 }
 
-.main {
+.landing {
+  transition: $mid-ease;
   width: 90vw;
   max-width: 900px;
-  transition: $fast-ease;
-}
-
-.landing {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  transition: $fast-ease;
+  transition: $mid-ease;
+  &.middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  &.top {
+    margin-top: 3vh;
+  }
 }
