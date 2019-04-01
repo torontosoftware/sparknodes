@@ -1,12 +1,21 @@
 html, body {
+  @extend .font-sm;
   font-family: $font-main;
   font-weight: $regular;
-  font-size: 14px;
-  color: $navy;
+  background-color: $navy;
+  color: $white;
 }
 
 .main {
-  margin-top: 3vh;
   width: 90vw;
   max-width: 900px;
+  transition: $fast-ease;
+}
+
+.landing {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  transition: $fast-ease;
 }

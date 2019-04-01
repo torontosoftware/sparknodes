@@ -1,20 +1,32 @@
 h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: $regular;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
+.font-main-color {
+  color: $white;
+}
+
 .font-lg {
+  @extend .font-main-color;
   font-size: 1.5rem;
 }
 
 .font-md {
+  @extend .font-main-color;
   font-size: 1.2rem;
 }
 
 .font-sm {
+  @extend .font-main-color;
   font-size: 1rem;
 }
 
 .text-center {
+  @extend .font-main-color;
   text-align: center;
 }
