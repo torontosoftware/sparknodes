@@ -10,5 +10,14 @@
     @extend .text-center;
     @extend .font-md;
     color: $navy;
+    margin-bottom: $mgn;
+  }
+  & .picture {
+    @extend .text-center;
+    & img {
+      width: 70%;
+      border-radius: 50%;
+      background-color: $sage;
+    }
   }
 }

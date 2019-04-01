@@ -14,10 +14,10 @@ class ModuleCardList extends React.Component {
       _.values(_.mapValues(moduleList, (module) => {
         console.log(module);
         return (
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div className="col-12 col-sm-6 col-md-4">
             <ModuleCard module={module}/>
           </div>
-        )
+        );
       }))
     );
   }
