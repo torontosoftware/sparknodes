@@ -14,7 +14,9 @@ class ModuleCardList extends React.Component {
       _.values(_.mapValues(moduleList, (module) => {
         console.log(module);
         return (
-          <ModuleCard module={module}/>
+          <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+            <ModuleCard module={module}/>
+          </div>
         )
       }))
     );
@@ -23,8 +25,10 @@ class ModuleCardList extends React.Component {
   render() {
     console.log(this.renderCardList());
     return (
-      <div className="">
-        {this.renderCardList()}
+      <div className="container-fluid">
+        <div className="row">
+          {this.renderCardList()}
+        </div>
       </div>
     );
   }

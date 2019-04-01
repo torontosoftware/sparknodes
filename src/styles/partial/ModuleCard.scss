@@ -1,0 +1,13 @@
+.module-card {
+  height: 250px;
+  background-color: $navy;
+  color: $white;
+  border-radius: $br;
+  margin-top: $mgn;
+  margin-bottom: $mgn;
+  padding: $mgn;
+  & .title {
+    @extend .text-center;
+    @extend .font-md;
+  }
+}
