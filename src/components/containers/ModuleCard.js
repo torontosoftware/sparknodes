@@ -14,11 +14,3 @@ class ModuleCard extends React.Component {
 }
 
 export default ModuleCard;
-
-/*
-
-<div className="picture">
-  <img src={bst}/>
-</div>
-
-*/
