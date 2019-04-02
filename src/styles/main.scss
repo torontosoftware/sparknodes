@@ -1,8 +1,8 @@
 html, body {
   @extend .font-sm;
   font-family: $font-main;
-  font-weight: $regular;
-  background-color: $navy;
+  font-weight: $light;
+  background-color: $off-black;
   color: $white;
 }
 
@@ -19,5 +19,19 @@ html, body {
   }
   &.top {
     margin-top: 3vh;
+  }
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  &.light {
+    background-color: $off-white;
+  }
+  & .font-main-color {
+    color: $off-black;
   }
 }

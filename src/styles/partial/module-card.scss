@@ -1,11 +1,23 @@
+@mixin box-shadow-gen($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
 .module-card {
-  height: 250px;
+  height: 260px;
   background-color: $white;
   color: $navy;
   border-radius: $br;
   margin-top: $mgn;
   margin-bottom: $mgn;
   padding: $mgn;
+  transition: $fast-ease;
+  @include box-shadow-gen(10px 10px 31px -3px rgba(0,0,0,0.41));
+  &:hover {
+    transition: $fast-ease;
+    @include box-shadow-gen(12px 12px 31px -3px rgba(0,0,0,0.58));
+  }
   & .title {
     @extend .text-center;
     @extend .font-md;
@@ -17,7 +29,7 @@
     & img {
       width: 70%;
       border-radius: 50%;
-      background-color: $sage;
+      background-color: $green-ochre;
     }
   }
 }
