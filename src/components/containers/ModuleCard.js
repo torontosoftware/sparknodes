@@ -8,12 +8,17 @@ class ModuleCard extends React.Component {
         <div className="title">
           {this.props.module.name}
         </div>
-        <div className="picture">
-          <img src={bst}/>
-        </div>
       </div>
     );
   }
 }
 
 export default ModuleCard;
+
+/*
+
+<div className="picture">
+  <img src={bst}/>
+</div>
+
+*/
