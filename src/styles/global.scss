@@ -1,7 +1,26 @@
 $font-main: 'Nunito', sans-serif;
 
-$light: 300;
-$regular: 400;
-$bold: 700;
+$light: 200;
+$regular: 300;
+$bold: 400;
+$xbold: 700;
 
-$navy: #293D54;
+$navy: #13202f;
+$white: #ffffff;
+$light-blue: #6495ed;
+$off-black: #171717;
+$off-white: #F1F1F1;
+
+// global border radius
+$br: 10px;
+$br-md: 15px;
+
+// cell margin
+$mgn: 15px;
+$mgn-md: 20px;
+$mgn-xl: 30px;
+
+// easing
+$fast-ease: 0.3s ease-in-out;
+$mid-ease: 0.5s ease-in-out;
+$slow-ease: 0.7s ease-in-out;

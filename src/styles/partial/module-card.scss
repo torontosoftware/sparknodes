@@ -1,0 +1,33 @@
+@mixin box-shadow-gen($box-shadow) {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+.module-card {
+  min-height: 270px;
+  background-color: $light-blue;
+  color: $navy;
+  border-radius: $br-md;
+  margin-top: $mgn;
+  margin-bottom: $mgn;
+  cursor: pointer;
+  padding: $mgn-md;
+  transition: $fast-ease;
+  background-image: url('../assets/images/bst.png');
+  background-size: contain;
+  background-repeat: none;
+  @include box-shadow-gen(10px 10px 31px -3px rgba(0,0,0,0.3));
+  &:hover {
+    transition: $fast-ease;
+    @include box-shadow-gen(12px 12px 31px -3px rgba(0,0,0,0.41));
+  }
+  & .title {
+    @extend .font-md;
+    font-weight: $xbold;
+    color: $white !important;
+    position: absolute;
+    bottom: $mgn-xl;
+    left: $mgn-xl;
+  }
+}

@@ -1,12 +1,13 @@
 import React from 'react';
-import '../styles/styles.scss';
+import { BrowserRouter } from 'react-router-dom';
+import Container from './containers/Container';
 
 class App extends React.Component {
   render() {
     return(
-      <div>
-       <h1 className="text-center">welcome to sparknodes</h1>
-      </div>
+      <BrowserRouter>
+        <Container/>
+      </BrowserRouter>
     );
   }
 }
