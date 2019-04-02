@@ -1,14 +1,14 @@
 import React from 'react';
-import bst from '../../assets/images/bst.png';
+import { Link } from 'react-router-dom';
 
 class ModuleCard extends React.Component {
   render() {
     return (
-      <div className="module-card">
+      <Link className="module-card" to={`/modules/${this.props.module.name}`}>
         <div className="title">
           {this.props.module.name}
         </div>
-      </div>
+      </Link>
     );
   }
 }
