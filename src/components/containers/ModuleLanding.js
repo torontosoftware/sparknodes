@@ -8,7 +8,7 @@ class ModuleLanding extends React.Component {
       <div className="landing container-fluid">
         <div className="top">
           <div className="col-12">
-           <h2 className="text-center">sparknodes</h2>
+           <h2 className="bold text-center">sparknodes</h2>
           </div>
         </div>
         <ModuleCardList/>

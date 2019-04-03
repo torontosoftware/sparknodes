@@ -2,12 +2,18 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  & h2 {
+    font-weight: $bold;
+  }
+  & h3 {
+    font-weight: $regular;
+  }
   & .left {
     @extend .full-height;
+    @extend .fsc;
     background-color: $off-white;
-    color: $off-black;
     padding: $mgn-md;
-    & .font-main-color {
+    & .fmc {
       color: $off-black;
     }
   }

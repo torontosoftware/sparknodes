@@ -25,8 +25,8 @@
   }
   & .title {
     @extend .font-md;
+    @extend .fsc;
     font-weight: $xbold;
-    color: $white !important;
     position: absolute;
     bottom: $mgn-xl;
     left: $mgn-xl;

@@ -1,15 +1,12 @@
 .btn {
-  background-color: none;
-  border-radius: $br;
-  border: 1px solid $white;
+  background-color: $off-white;
+  border-radius: 25px;
   height: 50px;
   width: 80%;
   max-width: 250px;
   margin-top: $mgn;
   margin-bottom: $mgn;
-  line-height: 40px;
+  line-height: 35px;
+  @extend .fsc;
   @extend .font-md;
-  &:hover {
-    color: inherit;
-  }
 }
