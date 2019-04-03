@@ -11,9 +11,17 @@ h3 {
   font-size: 1.2rem;
 }
 
-.font-main-color {
-  color: $white;
+.theme-dark {
+  & .font-main-color {
+    color: $white;
+  }
 }
+.theme-light {
+  & .font-main-color {
+    color: $off-black;
+  }
+}
+
 
 .font-lg {
   @extend .font-main-color;
