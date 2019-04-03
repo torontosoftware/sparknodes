@@ -11,6 +11,11 @@ class ModulePage extends React.Component {
     document.querySelector('body').className = 'theme-dark'
     return (
       <div className="module-page container-fluid">
+        <Button className="btn module-list-btn">
+          <i class="material-icons">
+          more_vert
+          </i>
+        </Button>
         <div className="row">
           <ModuleLeftPage>
             <LinkedListIntroLeft/>

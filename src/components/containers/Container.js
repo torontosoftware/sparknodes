@@ -32,6 +32,7 @@ class Container extends React.Component {
               <Route path="/" exact component={Landing}/>
               <Route path="/modules" exact component={ModuleLanding}/>
               <Route path="/modules/:id" exact component={ModulePage}/>
+              <Route component={Landing}/>
             </Switch>
           </section>
         </CSSTransition>
