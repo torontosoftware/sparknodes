@@ -1,6 +1,6 @@
 import React from 'react';
 
-class LinkedListIntroRight extends React.Component {
+class LinkedListIntroLeft extends React.Component {
   render() {
     return (
       <div>

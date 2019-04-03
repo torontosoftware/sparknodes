@@ -14,7 +14,7 @@
     line-height: 1.8rem;
   }
   & .left {
-    @extend .full-height;
+    min-height: 100vh;
     @extend .fsc;
     background-color: $off-white;
     padding: $mgn-md;
@@ -30,7 +30,7 @@
   }
   & .right {
     padding: $mgn-md;
-    @extend .full-height;
+    min-height: 100vh;
     @include md {
       padding: $mgn-lg;
     }
