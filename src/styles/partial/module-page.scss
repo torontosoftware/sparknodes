@@ -3,26 +3,16 @@
   height: 100vh;
   overflow-x: hidden;
   & .left {
-    display: inline-block;
+    @extend .full-height;
     background-color: $off-white;
-    height: 100%;
-    width: 100%;
-    @include md {
-      width: 40%;
-    }
-    @include lg {
-      width: 30%;
+    color: $off-black;
+    padding: $mgn-md;
+    & .font-main-color {
+      color: $off-black;
     }
   }
   & .right {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    @include md {
-      width: 60%;
-    }
-    @include lg {
-      width: 70%;
-    }
+    padding: $mgn-md;
+    @extend .full-height;
   }
 }
