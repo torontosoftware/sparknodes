@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 class ModuleCard extends React.Component {
   render() {
+    const {name, title} = this.props.module;
     return (
-      <Link className="module-card" to={`/modules/${this.props.module.name}`}>
+      <Link className={`module-card ${name}`} to={`/modules/${name}`}>
         <div className="title">
-          {this.props.module.name}
+          {title}
         </div>
       </Link>
     );
