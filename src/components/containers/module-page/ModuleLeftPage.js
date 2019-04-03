@@ -29,6 +29,23 @@ class ModuleLeftPage extends React.Component {
           A doubly linked list is a list that has two references,
           one to the next node and another to previous node.
         </p>
+        <p>
+          Another important type of a linked list is called a
+          circular linked list where last node of the list points
+          back to the first node (or the head) of the list.
+        </p>
+        <h3>
+          The Node class
+        </h3>
+        <p>
+          In Java you are allowed to define a class (say, B)
+          inside of another class (say, A). The class A is called
+          the outer class, and the class B is called the inner class.
+          The purpose of inner classes is purely to be used
+          internally as helper classes. Here is the LinkedList
+          class with the inner Node class
+        </p>
+
       </div>
     );
   }

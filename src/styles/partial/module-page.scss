@@ -2,11 +2,16 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  transition: $fast-ease;
   & h2 {
     font-weight: $bold;
   }
   & h3 {
     font-weight: $regular;
+  }
+  & p {
+    font-weight: $x-light;
+    line-height: 1.8rem;
   }
   & .left {
     @extend .full-height;
@@ -16,9 +21,21 @@
     & .fmc {
       color: $off-black;
     }
+    @include md {
+      padding: $mgn-lg;
+    }
+    @include lg {
+      padding: $mgn-xl;
+    }
   }
   & .right {
     padding: $mgn-md;
     @extend .full-height;
+    @include md {
+      padding: $mgn-lg;
+    }
+    @include lg {
+      padding: $mgn-xl;
+    }
   }
 }
