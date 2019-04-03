@@ -12,10 +12,11 @@
   &.module-list-btn {
     position: absolute;
     top: $mgn-xl;
-    left: $mgn-xl;
+    right: $mgn-xl;
     background-color: transparent;
     width: 50px;
     height: 50px;
     z-index: 3;
+    color: $off-white;
   }
 }
