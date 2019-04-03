@@ -9,8 +9,17 @@ import '../../styles/styles.scss';
 
 
 class Container extends React.Component {
+  componentDidUpdate = () => {
+    const { location } = this.props;
+    if (location.pathname && (location.pathname === '/' || location.pathname.startsWith('/modules/'))) {
+      document.querySelector('body').className = 'theme-dark'
+    } else {
+      document.querySelector('body').className = 'theme-light';
+    }
+  }
+
   render() {
-    const { location } = this.props
+    const { location } = this.props;
     return (
       <TransitionGroup className="transition-group">
         <CSSTransition

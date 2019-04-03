@@ -1,0 +1,28 @@
+.module-page {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  & .left {
+    display: inline-block;
+    background-color: $off-white;
+    height: 100%;
+    width: 100%;
+    @include md {
+      width: 40%;
+    }
+    @include lg {
+      width: 30%;
+    }
+  }
+  & .right {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    @include md {
+      width: 60%;
+    }
+    @include lg {
+      width: 70%;
+    }
+  }
+}

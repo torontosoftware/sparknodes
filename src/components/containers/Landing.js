@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 class Landing extends React.Component {
   render() {
-    document.querySelector('body').className = 'theme-dark';
+    document.querySelector('body').className = 'theme-dark'
     return(
       <div className="landing middle container-fluid">
        <div className="row">
