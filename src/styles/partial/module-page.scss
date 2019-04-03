@@ -17,25 +17,25 @@
     min-height: 100vh;
     @extend .fsc;
     background-color: $off-white;
-    padding: $mgn-md;
+    padding: $mgn-lg;
     & .fmc {
       color: $off-black;
     }
     @include md {
-      padding: $mgn-lg;
+      padding: $mgn-xl;
     }
     @include lg {
-      padding: $mgn-xl;
+      padding: $mgn-xxl;
     }
   }
   & .right {
-    padding: $mgn-md;
+    padding: $mgn-lg;
     min-height: 100vh;
     @include md {
-      padding: $mgn-lg;
+      padding: $mgn-xl;
     }
     @include lg {
-      padding: $mgn-xl;
+      padding: $mgn-xxl;
     }
   }
 }
