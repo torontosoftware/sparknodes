@@ -8,6 +8,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   background-color: blue;
+  transition: $fast-ease;
   &.theme-dark {
     background-color: $off-black;
     color: $off-white;
@@ -22,15 +23,14 @@ html, body {
   transition: $mid-ease;
   width: 90vw;
   max-width: 900px;
-  transition: $mid-ease;
   padding-bottom: 3vh;
-  &.middle {
+  & .middle {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
   }
-  &.top {
+  & .top {
     padding-top: 3vh;
   }
 }
@@ -49,4 +49,19 @@ html, body {
       color: $off-black;
     }
   }
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.transition-group {
+  position: relative;
+}
+
+.route-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
