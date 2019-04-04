@@ -8,9 +8,12 @@ import LinkedListIntroLeft from '../../modules/linked-lists/sections/LinkedListI
 import LinkedListIntroRight from '../../modules/linked-lists/sections/LinkedListIntroRight';
 import LinkedListNodeLeft from '../../modules/linked-lists/sections/LinkedListNodeLeft';
 
+import MenuToggleButton from '../../ui/MenuToggleButton';
+
 class ModulePage extends React.Component {
   state = {
-    showModuleList: false
+    showModuleList: false,
+
   };
 
   moduleListButtonHandler = () => {
@@ -23,11 +26,7 @@ class ModulePage extends React.Component {
     document.querySelector('body').className = 'theme-dark'
     return (
       <div className="module-page container-fluid">
-        <button className="btn module-list-btn" onClick={this.moduleListButtonHandler}>
-          <i class="material-icons">
-          more_vert
-          </i>
-        </button>
+        <MenuToggleButton onClick={this.moduleListButtonHandler}/>
         <ModuleSectionList show={this.state.showModuleList}/>
         <div className="row">
           <ModuleLeftPage>

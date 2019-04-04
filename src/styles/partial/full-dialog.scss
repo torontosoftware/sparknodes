@@ -7,6 +7,7 @@
   left: 0;
   z-index: 2;
   background-color: $off-black;
+  animation: $a-fade-from-right;
   & a {
     width: 90%;
     height: 60px;
