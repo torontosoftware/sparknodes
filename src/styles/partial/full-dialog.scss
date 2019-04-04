@@ -16,5 +16,10 @@
     font-size: 2rem;
     font-weight: $regular;
     display: block;
+    transition: $fast-ease;
+    &:hover {
+      transition: $fast-ease;
+      margin-left: $mgn-sm;
+    }
   }
 }

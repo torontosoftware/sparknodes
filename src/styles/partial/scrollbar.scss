@@ -1,6 +1,6 @@
 ::-webkit-scrollbar {
   width: 6px;
-  background-color: transparent;
+  background-color: $off-white;
 }
 
 ::-webkit-scrollbar-track {
@@ -8,10 +8,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $off-white;
+  background: $light-blue;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $off-white;
+  background: $light-blue;
 }
