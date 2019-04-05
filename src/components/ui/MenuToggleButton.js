@@ -3,7 +3,7 @@ import React from 'react';
 class MenuToggleButton extends React.Component {
   state = {
     invertColor: false,
-    viewHeight: window.visualViewport.height
+    viewHeight: window.innerHeight
   };
 
   checkInvertColor = () => {
@@ -15,8 +15,9 @@ class MenuToggleButton extends React.Component {
   }
 
   setViewHeight = () => {
+    console.log(window);
     this.setState({
-      viewHeight: window.visualViewport.height
+      viewHeight: window.innerHeight
     });
   }
 
