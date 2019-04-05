@@ -14,6 +14,6 @@
   &.fade-exit-active {
     opacity: 0;
     margin-top: 10px;
-    transition: $mid-ease;
+    transition: $slow-ease;
   }
 }

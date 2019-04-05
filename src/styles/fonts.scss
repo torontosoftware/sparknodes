@@ -1,36 +1,54 @@
 h1 {
   font-size: 4rem;
-  font-weight: $light;
+  font-weight: $bold;
 }
 
 h2 {
   font-size: 2rem;
+  &.bold {
+    font-weight: $bold;
+  }
 }
 
 h3 {
   font-size: 1.2rem;
+  font-weight: $x-light;
 }
 
-.font-main-color {
-  color: $white;
+.theme-dark {
+  & .fmc {
+    color: $white;
+  }
+  & .fsc {
+    color: $off-black
+  }
 }
+.theme-light {
+  & .fmc {
+    color: $off-black;
+  }
+  & .fsc {
+    color: $off-white
+  }
+}
+
 
 .font-lg {
-  @extend .font-main-color;
+  @extend .fmc;
   font-size: 1.5rem;
 }
 
 .font-md {
-  @extend .font-main-color;
+  @extend .fmc;
   font-size: 1.2rem;
 }
 
 .font-sm {
-  @extend .font-main-color;
+  @extend .fmc;
   font-size: 1rem;
 }
 
 .text-center {
-  @extend .font-main-color;
+  @extend .fmc;
   text-align: center;
 }

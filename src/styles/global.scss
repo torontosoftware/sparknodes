@@ -1,26 +1,63 @@
-$font-main: 'Nunito', sans-serif;
+//$font-main: 'Nunito', sans-serif;
+//$font-main: 'Lato', sans-serif;
+$font-main: 'Source Sans Pro', sans-serif;
 
-$light: 200;
-$regular: 300;
-$bold: 400;
-$xbold: 700;
+$x-light: 300;
+$light: 400;
+$regular: 600;
+$bold: 700;
+$xbold: 900;
 
 $navy: #13202f;
 $white: #ffffff;
 $light-blue: #6495ed;
 $off-black: #171717;
-$off-white: #F1F1F1;
+$off-white: #FAFAFA;
+$light-blue: #82c5da;
 
 // global border radius
 $br: 10px;
 $br-md: 15px;
 
 // cell margin
+$mgn-sm: 10px;
 $mgn: 15px;
 $mgn-md: 20px;
+$mgn-lg: 25px;
 $mgn-xl: 30px;
+$mgn-xxl: 45px;
 
 // easing
-$fast-ease: 0.3s ease-in-out;
-$mid-ease: 0.5s ease-in-out;
-$slow-ease: 0.7s ease-in-out;
+$fast-ease: 0.3s ease all;
+$mid-ease: 0.5s ease all;
+$slow-ease: 0.7s ease all;
+
+// screen sizes
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1220px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}

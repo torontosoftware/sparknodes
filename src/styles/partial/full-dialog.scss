@@ -1,0 +1,25 @@
+.full-dialog {
+  height: 100vh;
+  width: 100vw;
+  padding: $mgn-xl;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: $off-black;
+  animation: $a-fade-from-right;
+  & a {
+    width: 90%;
+    height: 60px;
+    text-decoration: none;
+    color: $off-white;
+    font-size: 2rem;
+    font-weight: $regular;
+    display: block;
+    transition: $fast-ease;
+    &:hover {
+      transition: $fast-ease;
+      margin-left: $mgn-sm;
+    }
+  }
+}

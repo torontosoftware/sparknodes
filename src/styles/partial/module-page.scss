@@ -1,0 +1,41 @@
+.module-page {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: $fast-ease;
+  & h2 {
+    font-weight: $bold;
+  }
+  & h3 {
+    font-weight: $regular;
+  }
+  & p {
+    font-weight: $x-light;
+    line-height: 1.8rem;
+  }
+  & .left {
+    min-height: 100vh;
+    @extend .fsc;
+    background-color: $off-white;
+    padding: $mgn-lg;
+    & .fmc {
+      color: $off-black;
+    }
+    @include md {
+      padding: $mgn-xl;
+    }
+    @include lg {
+      padding: $mgn-xxl;
+    }
+  }
+  & .right {
+    padding: $mgn-lg;
+    min-height: 100vh;
+    @include md {
+      padding: $mgn-xl;
+    }
+    @include lg {
+      padding: $mgn-xxl;
+    }
+  }
+}

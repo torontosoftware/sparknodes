@@ -3,14 +3,15 @@ import ModuleCardList from './ModuleCardList';
 
 class ModuleLanding extends React.Component {
   render() {
+    document.querySelector('body').className = 'theme-light';
     return (
-      <div className="page light">
-        <div className="landing top container-fluid">
+      <div className="landing container-fluid">
+        <div className="top">
           <div className="col-12">
-           <h2 className="text-center">sparknodes</h2>
+           <h2 className="bold text-center">sparknodes</h2>
           </div>
-          <ModuleCardList/>
         </div>
+        <ModuleCardList/>
       </div>
     );
   }

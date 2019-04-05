@@ -5,8 +5,9 @@
 }
 
 .module-card {
+  display: block;
   min-height: 270px;
-  background-color: $light-blue;
+  background-color: $off-white;
   color: $navy;
   border-radius: $br-md;
   margin-top: $mgn;
@@ -14,20 +15,34 @@
   cursor: pointer;
   padding: $mgn-md;
   transition: $fast-ease;
-  background-image: url('../assets/images/bst.png');
+  background-image: url('https://ds055uzetaobb.cloudfront.net/brioche/uploads/rHpmPKo6lq-fsm_prob1.png?width=1200');
   background-size: contain;
   background-repeat: none;
-  @include box-shadow-gen(10px 10px 31px -3px rgba(0,0,0,0.3));
+  @include box-shadow-gen(10px 10px 31px -3px rgba(0,0,0,0.15));
   &:hover {
+    margin-top: $mgn-sm;
     transition: $fast-ease;
-    @include box-shadow-gen(12px 12px 31px -3px rgba(0,0,0,0.41));
+    @include box-shadow-gen(12px 12px 31px -3px rgba(0,0,0,0.3));
   }
   & .title {
     @extend .font-md;
+    @extend .fsc;
     font-weight: $xbold;
-    color: $white !important;
     position: absolute;
     bottom: $mgn-xl;
     left: $mgn-xl;
+  }
+  // module specific backgrounds
+  &.linkedlists {
+    background-image: url('https://i1.faceprep.in/Companies-1/difference-between-arrays-and-linked-list.png');
+  }
+  &.timecomplexity {
+    background-image: url('https://www.coengoedegebure.com/content/images/2017/10/bigochart.gif');
+  }
+  &.binarytree {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/922px-Binary_search_tree.svg.png');
+  }
+  &.pushdownautomata {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a0/Palindrom_pushdown_automaton.png');
   }
 }
