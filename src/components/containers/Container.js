@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
-import Landing from './Landing';
+import Landing from './landing/Landing';
 import ModuleLanding from './ModuleLanding';
 import ModulePage from './module-page/ModulePage';
 import 'bootstrap/dist/css/bootstrap.min.css';
