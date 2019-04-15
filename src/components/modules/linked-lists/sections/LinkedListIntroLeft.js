@@ -4,12 +4,12 @@ class LinkedListIntroLeft extends React.Component {
   render() {
     return (
       <div>
-        <h2>
-          Linked Lists
-        </h2>
         <h3>
-          Introduction
+          Linked Lists
         </h3>
+        <h4>
+          Introduction
+        </h4>
         <p>
           Each element (we will call it a node) of a list is
           comprising of two items - the data and a reference
@@ -19,9 +19,9 @@ class LinkedListIntroLeft extends React.Component {
           separate node, but the reference to the first node.
           If the list is empty then the head is a null reference.
         </p>
-        <h3>
+        <h4>
           Types of Linked Lists
-        </h3>
+        </h4>
         <p>
           A singly linked list is described above
         </p>
@@ -34,9 +34,9 @@ class LinkedListIntroLeft extends React.Component {
           circular linked list where last node of the list points
           back to the first node (or the head) of the list.
         </p>
-        <h3>
+        <h4>
           The Node class
-        </h3>
+        </h4>
         <p>
           In Java you are allowed to define a class (say, B)
           inside of another class (say, A). The class A is called

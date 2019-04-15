@@ -15,8 +15,8 @@ class Landing extends React.Component {
               <h1 className="text-center">sparknodes</h1>
              </div>
              <div className="col-12">
-               <h3 className="text-center">a visual intro to the theory of
-               computation, data structures, and algorithms.</h3>
+               <h4 className="text-center">a visual intro to the theory of
+               computation, data structures, and algorithms.</h4>
              </div>
              <div className="col-12 text-center">
               <Link className="btn" to="/sparknodes/modules">
