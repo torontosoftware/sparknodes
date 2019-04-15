@@ -9,7 +9,7 @@ class ParticlesLanding extends React.Component {
         params={{
     	    "particles": {
     	        "number": {
-    	            "value": 110,
+    	            "value": 100,
     	            "density": {
     	                "enable": false
     	            }
@@ -18,18 +18,18 @@ class ParticlesLanding extends React.Component {
                 "value" : "#82c5da"
               },
     	        "size": {
-    	            "value": 3,
+    	            "value": 4,
     	            "random": true,
     	            "anim": {
     	                "speed": 4,
-    	                "size_min": 0.3
+    	                "size_min": 1
     	            }
     	        },
     	        "line_linked": {
     	            "enable": true,
-                  "distance": 100,
+                  "distance": 90,
                   "color": "#82c5da",
-                  "opacity": 0.2
+                  "opacity": 0.1
     	        },
     	        "move": {
                   "bounce": true,
@@ -39,8 +39,8 @@ class ParticlesLanding extends React.Component {
     	            "out_mode": "out",
                   "attract": {
                     "enable": true,
-                    "rotateX": 10,
-                    "rotateY": 10
+                    "rotateX": 100,
+                    "rotateY": 100
                   }
     	        }
     	    },
@@ -51,7 +51,7 @@ class ParticlesLanding extends React.Component {
     	                "mode": "bubble"
     	            },
     	            "onclick": {
-    	                "enable": true,
+    	                "enable": false,
     	                "mode": "repulse"
     	            }
     	        },

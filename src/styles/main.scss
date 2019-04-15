@@ -21,8 +21,9 @@ html, body {
 .landing {
   transition: $mid-ease;
   width: 90vw;
+  min-height: 100vh;
   max-width: 900px;
-  padding-bottom: 3vh;
+  padding-bottom: 6vh;
   & .middle {
     position: absolute;
     left: 50%;

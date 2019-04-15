@@ -4,6 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Landing from './landing/Landing';
 import ModuleLanding from './ModuleLanding';
 import ModulePage from './module-page/ModulePage';
+import Footer from '../ui/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/styles.scss';
 
@@ -33,6 +34,7 @@ class Container extends React.Component {
               <Route path="/sparknodes/modules" exact component={ModuleLanding}/>
               <Route path="/sparknodes/modules/:id" exact component={ModulePage}/>
             </Switch>
+            <Footer/>
           </section>
         </CSSTransition>
       </TransitionGroup>

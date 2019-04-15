@@ -1,0 +1,26 @@
+.footer {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  height: 2rem;
+  width: 100vw;
+  padding: 0 $mgn 0 $mgn;
+  & .heart {
+    font-size: $font-md;
+    color: $light-blue !important;
+    position: relative;
+    top: 3px;
+  }
+}
+
+.theme-light {
+  & .footer {
+    background-color: $off-white;
+  }
+}
+
+.theme-dark {
+  & .footer {
+    background-color: $off-black;
+  }
+}

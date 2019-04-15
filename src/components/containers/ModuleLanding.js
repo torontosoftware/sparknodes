@@ -9,6 +9,8 @@ class ModuleLanding extends React.Component {
         <div className="top">
           <div className="col-12">
            <h2 className="bold text-center">sparknodes</h2>
+           <h3 className="text-center">a visual intro to the theory of
+           computation, data structures, and algorithms.</h3>
           </div>
         </div>
         <ModuleCardList/>

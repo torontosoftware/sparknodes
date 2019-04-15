@@ -21,11 +21,11 @@
   max-width: 285px;
   margin-left: auto;
   margin-right: auto;
-  @include box-shadow-gen(10px 10px 31px -3px rgba(0,0,0,0.15));
+  @include box-shadow-gen(10px 10px 31px -3px rgba(0,0,0,0.25));
   &:hover {
     margin-top: $mgn-sm;
     transition: $fast-ease;
-    @include box-shadow-gen(12px 12px 31px -3px rgba(0,0,0,0.3));
+    @include box-shadow-gen(12px 12px 31px -3px rgba(0,0,0,0.35));
   }
   & .title {
     @extend .font-lg;
