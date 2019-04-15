@@ -11,15 +11,14 @@ class ParticlesLanding extends React.Component {
     	        "number": {
     	            "value": 110,
     	            "density": {
-    	                "enable": true,
-                      "value_area": 1000
+    	                "enable": false
     	            }
     	        },
               "color": {
                 "value" : "#82c5da"
               },
     	        "size": {
-    	            "value": 5,
+    	            "value": 3,
     	            "random": true,
     	            "anim": {
     	                "speed": 4,
@@ -33,10 +32,16 @@ class ParticlesLanding extends React.Component {
                   "opacity": 0.2
     	        },
     	        "move": {
+                  "bounce": true,
     	            "random": true,
     	            "speed": 1,
     	            "direction": "top",
-    	            "out_mode": "out"
+    	            "out_mode": "out",
+                  "attract": {
+                    "enable": true,
+                    "rotateX": 10,
+                    "rotateY": 10
+                  }
     	        }
     	    },
     	    "interactivity": {
