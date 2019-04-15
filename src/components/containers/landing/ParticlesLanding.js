@@ -9,17 +9,17 @@ class ParticlesLanding extends React.Component {
         params={{
     	    "particles": {
     	        "number": {
-    	            "value": 160,
+    	            "value": 110,
     	            "density": {
-    	                "enable": false
+    	                "enable": true,
+                      "value_area": 1000
     	            }
     	        },
-              /*
               "color": {
-                "value" : "#bddce1"
-              },*/
+                "value" : "#82c5da"
+              },
     	        "size": {
-    	            "value": 3,
+    	            "value": 5,
     	            "random": true,
     	            "anim": {
     	                "speed": 4,
@@ -27,7 +27,10 @@ class ParticlesLanding extends React.Component {
     	            }
     	        },
     	        "line_linked": {
-    	            "enable": false
+    	            "enable": true,
+                  "distance": 100,
+                  "color": "#82c5da",
+                  "opacity": 0.2
     	        },
     	        "move": {
     	            "random": true,
