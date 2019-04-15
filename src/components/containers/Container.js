@@ -34,7 +34,7 @@ class Container extends React.Component {
               <Route path="/sparknodes/modules" exact component={ModuleLanding}/>
               <Route path="/sparknodes/modules/:id" exact component={ModulePage}/>
             </Switch>
-            <Footer/>
+            <Footer location={location}/>
           </section>
         </CSSTransition>
       </TransitionGroup>

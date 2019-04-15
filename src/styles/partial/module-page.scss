@@ -1,8 +1,11 @@
 .module-page {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   overflow-x: hidden;
   transition: $fast-ease;
+  & .content {
+
+  }
   & h2 {
     font-weight: $bold;
   }
