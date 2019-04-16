@@ -1,11 +1,8 @@
 .module-page {
-  width: 100vw;
-  height: 100vh;
+  @extend .full-screen;
+  @extend .overflow-scrolling-touch;
   overflow-x: hidden;
   transition: $fast-ease;
-  & .content {
-
-  }
   & h3 {
     font-weight: $bold;
   }

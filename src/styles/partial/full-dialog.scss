@@ -1,6 +1,6 @@
 .full-dialog {
-  height: 100vh;
-  width: 100vw;
+  @extend .overflow-scrolling-touch;
+  @extend .full-screen;
   padding: $mgn-xl;
   position: fixed;
   top: 0;

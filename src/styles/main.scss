@@ -18,12 +18,23 @@ html, body {
   }
 }
 
+.overflow-scrolling-touch {
+  --webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
+}
+
 .landing {
   transition: $mid-ease;
   width: 90vw;
   min-height: 100vh;
   max-width: 900px;
   padding-bottom: 6vh;
+  @extend .overflow-scrolling-touch;
   & .middle {
     position: absolute;
     left: 50%;
