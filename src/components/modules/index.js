@@ -4,18 +4,26 @@ import LinkedLists from './linked-lists/LinkedLists';
 export const moduleList = {
   linkedLists: {
     title: `Linked Lists`,
-    name: `linkedlists`
-  },
-  timeComplexity: {
-    title : `Time Complexity`,
-    name: `timecomplexity`
+    name: `linked-lists`
   },
   binaryTree: {
     title: `Binary Tree`,
-    name: `binarytree`
+    name: `binary-tree`
   },
-  PushDownAutomata: {
-    title: `Push Down Automata`,
-    name: `pushdownautomata`
+  timeComplexity: {
+    title : `Time Complexity`,
+    name: `time-complexity`
+  },
+  heap: {
+    title: `Heap`,
+    name: `heap`
+  },
+  finiteStateAutomata: {
+    title: `Finite State Automata`,
+    name: `finite-state-automata`
+  },
+  hashTable: {
+    title: `Hash Table`,
+    name: `hash-table`
   }
 };

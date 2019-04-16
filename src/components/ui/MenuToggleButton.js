@@ -15,7 +15,6 @@ class MenuToggleButton extends React.Component {
   }
 
   setViewHeight = () => {
-    console.log(window);
     this.setState({
       viewHeight: window.innerHeight
     });

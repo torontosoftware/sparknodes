@@ -10,7 +10,7 @@
   @extend .fsc;
   @extend .font-md;
   &.module-list-btn {
-    position: absolute;
+    position: fixed;
     right: 0;
     background-color: transparent;
     width: 50px;

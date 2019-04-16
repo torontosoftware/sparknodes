@@ -4,15 +4,20 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
-  &.bold {
-    font-weight: $bold;
-  }
+  font-size: 2.5rem;
 }
 
 h3 {
+  font-size: 2rem;
+}
+
+h4 {
   font-size: 1.2rem;
   font-weight: $x-light;
+}
+
+.bold {
+  font-weight: $bold;
 }
 
 .theme-dark {
@@ -35,17 +40,17 @@ h3 {
 
 .font-lg {
   @extend .fmc;
-  font-size: 1.5rem;
+  font-size: $font-lg;
 }
 
 .font-md {
   @extend .fmc;
-  font-size: 1.2rem;
+  font-size: $font-md;
 }
 
 .font-sm {
   @extend .fmc;
-  font-size: 1rem;
+  font-size: $font-sm;
 }
 
 .text-center {

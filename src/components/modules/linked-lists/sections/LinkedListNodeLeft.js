@@ -4,9 +4,9 @@ class LinkedListNodeLeft extends React.Component {
   render() {
     return (
       <div>
-        <h2>
+        <h3>
           Nodes
-        </h2>
+        </h3>
         <p>
           Each element (we will call it a node) of a list is
           comprising of two items - the data and a reference
