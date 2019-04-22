@@ -7,7 +7,7 @@ class Landing extends React.Component {
     document.querySelector('body').className = 'theme-dark'
     return(
       <div>
-        <div className="full-screen landing">
+        <div className="full-width landing">
           <ParticlesLanding className="full-height"/>
          <div className="middle">
            <div className="row">

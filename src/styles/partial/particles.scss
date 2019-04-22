@@ -1,8 +1,8 @@
 .particles {
-  height: 100%;
+  height: calc(100vh - 2rem);
   width: 100%;
   & canvas {
-    height: 100%;
+    height: calc(100vh - 2rem);
     width: 100%;
   }
 }
