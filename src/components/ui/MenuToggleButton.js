@@ -7,7 +7,7 @@ class MenuToggleButton extends React.Component {
   };
 
   checkInvertColor = () => {
-    let scrollTop = document.querySelector('.module-page').scrollTop;
+    let scrollTop = document.querySelector('body').scrollTop;
     let scrollTopRes = Math.floor((scrollTop + 30) / this.state.viewHeight) % 2;
     this.setState({
       invertColor: (scrollTopRes == 0 ? true : false)
@@ -21,14 +21,14 @@ class MenuToggleButton extends React.Component {
   }
 
   componentDidMount() {
-    let modulePage = document.querySelector('.module-page');
-    modulePage.addEventListener('scroll', this.checkInvertColor);
+    let body = document.querySelector('body');
+    body.addEventListener('scroll', this.checkInvertColor);
     window.addEventListener('resize', this.setViewHeight);
   }
 
   componentWillUnmount() {
-    let modulePage = document.querySelector('.module-page');
-    modulePage.removeEventListener('scroll', this.checkInvertColor);
+    let body = document.querySelector('body');
+    body.removeEventListener('scroll', this.checkInvertColor);
     window.removeEventListener('resize', this.setViewHeight);
   }
 
