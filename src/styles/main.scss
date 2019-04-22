@@ -23,11 +23,6 @@ html, body {
   -webkit-overflow-scrolling: touch;
 }
 
-.full-screen {
-  height: 100vh;
-  width: 100vw;
-}
-
 .landing {
   transition: $mid-ease;
   width: 90vw;
@@ -64,6 +59,11 @@ html, body {
 
 .full-height {
   height: 100vh;
+}
+
+.full-screen {
+  height: 100vh;
+  width: 100vw;
 }
 
 .transition-group {
