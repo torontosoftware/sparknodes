@@ -1,5 +1,4 @@
 .module-page {
-  @extend .full-screen;
   @extend .overflow-scrolling-touch;
   overflow-x: hidden;
   transition: $fast-ease;

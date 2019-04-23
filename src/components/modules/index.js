@@ -1,4 +1,3 @@
-import React from 'react';
 import LinkedLists from './linked-lists/LinkedLists';
 
 export const moduleList = {

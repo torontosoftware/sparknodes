@@ -13,7 +13,6 @@ import MenuToggleButton from '../../ui/MenuToggleButton';
 class ModulePage extends React.Component {
   state = {
     showModuleList: false,
-
   };
 
   moduleListButtonHandler = () => {
@@ -26,7 +25,10 @@ class ModulePage extends React.Component {
     document.querySelector('body').className = 'theme-dark'
     return (
       <div className="module-page container-fluid">
-        <MenuToggleButton onClick={this.moduleListButtonHandler}/>
+        <MenuToggleButton
+          onClick={this.moduleListButtonHandler}
+          invertWhiteAuto={this.state.showModuleList}
+        />
         <ModuleSectionList show={this.state.showModuleList}/>
         <div className="row">
           <ModuleLeftPage>
